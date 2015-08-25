@@ -1,3 +1,13 @@
+var arrMenus = {
+    menus:[
+            {name: "Exemplo 1", link: "#Exemplo1"},
+            {name: "Exemplo 2", link: "#Exemplo2"},
+            {name: "Exemplo 3", link: "#Exemplo3"},
+            {name: "Exemplo 4", link: "#Exemplo4"}
+        ]};
+
+// ko.applyBindings(arrMenus);
+
 var myViewModel = {
     // Exemplo 1
     desc1: "Carregando dados e mostrando NOVO NOME no alert.", 
@@ -20,7 +30,7 @@ var myViewModel = {
     personAge4: ko.observable(20)
 };
 
-ko.applyBindings(myViewModel);
+ko.applyBindings(myViewModel,arrMenus);
 
 
 ///////////////////////////////////////////

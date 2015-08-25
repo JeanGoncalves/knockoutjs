@@ -10,42 +10,52 @@
     <h3>Knockout | Exemplos</h3>
     <hr>
 
-    <fieldset>
-        <legend>Exemplo 1</legend>
-        <p data-bind="text: desc1"></p>
-        <span>Nome </span><input data-bind="value: personName1"><br>
-        <span>Idade </span><input data-bind="value: personAge1">
-        <br><br>
-        Seu nome é <b data-bind="text: personName1"></b> e tem <b data-bind="text: personAge1"></b> anos.
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Exemplo 2</legend>
-        <p data-bind="text: desc2"></p>
-        <span>Nome </span><input data-bind="value: personName2"><br>
-        <span>Idade </span><input data-bind="value: personAge2">
-        <br><br>
-        Seu nome é <b data-bind="text: personName2"></b> e tem <b data-bind="text: personAge2"></b> anos.
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Exemplo 3</legend>
-        <p data-bind="text: desc3"></p>
-        <span>Nome </span><input data-bind="value: personName3"><br>
-        <span>Idade </span><input data-bind="value: personAge3">
-        <br><br>
-        Seu nome é <b data-bind="text: personName3"></b> e tem <b data-bind="text: personAge3"></b> anos.
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Exemplo 4</legend>
-        <p data-bind="text: desc4"></p>
-        <span>Nome </span><input data-bind="value: personName4"><br>
-        <span>Idade </span><input data-bind="value: personAge4">
-        <br><br>
-        Seu nome é <b data-bind="text: personName4"></b> e tem <b data-bind="text: personAge4"></b> anos.
-    </fieldset>
+    <table>
+        <tr><td valign="top">
+            <ul data-bind="foreach: menus">
+                <li><a data-bind="text: name, attr:{href: link}"></a></li>
+            </ul>    
+        </td>
+        <td width="100%">
+            <fieldset id="Exemplo1">
+                <legend>Exemplo 1</legend>
+                <p data-bind="text: desc1"></p>
+                <span>Nome </span><input data-bind="value: personName1"><br>
+                <span>Idade </span><input data-bind="value: personAge1">
+                <br><br>
+                Seu nome é <b data-bind="text: personName1"></b> e tem <b data-bind="text: personAge1"></b> anos.
+            </fieldset>
+            <br>
+            <fieldset id="Exemplo2">
+                <legend>Exemplo 2</legend>
+                <p data-bind="text: desc2"></p>
+                <span>Nome </span><input data-bind="value: personName2"><br>
+                <span>Idade </span><input data-bind="value: personAge2">
+                <br><br>
+                Seu nome é <b data-bind="text: personName2"></b> e tem <b data-bind="text: personAge2"></b> anos.
+            </fieldset>
+            <br>
+            <fieldset id="Exemplo3">
+                <legend>Exemplo 3</legend>
+                <p data-bind="text: desc3"></p>
+                <span>Nome </span><input data-bind="value: personName3"><br>
+                <span>Idade </span><input data-bind="value: personAge3">
+                <br><br>
+                Seu nome é <b data-bind="text: personName3"></b> e tem <b data-bind="text: personAge3"></b> anos.
+            </fieldset>
+            <br>
+            <fieldset id="Exemplo4">
+                <legend>Exemplo 4</legend>
+                <p data-bind="text: desc4"></p>
+                <span>Nome </span><input data-bind="value: personName4"><br>
+                <span>Idade </span><input data-bind="value: personAge4">
+                <br><br>
+                Seu nome é <b data-bind="text: personName4"></b> e tem <b data-bind="text: personAge4"></b> anos.
+            </fieldset>
+        </td></tr>
+    </table>
 
-    <script type="text/javascript" src="index.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
